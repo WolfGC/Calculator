@@ -7,12 +7,12 @@ function operate(operator, firstNum, secondNum) {
   firstNum = Number(firstNum);
   secondNum = Number(secondNum);
   const operators = {
-    '+': add(firstNum, secondNum),
-    '-': subtract(firstNum, secondNum),
-    '*': multiply(firstNum, secondNum),
-    '/': divide(firstNum, secondNum),
+    "+": add(firstNum, secondNum),
+    "-": subtract(firstNum, secondNum),
+    "*": multiply(firstNum, secondNum),
+    "/": divide(firstNum, secondNum),
   };
-  return operators[operator] ?? 'Error';
+  return operators[operator] ?? "Error";
 }
 
-console.log('add', operate('+', 234, 234));
+console.log("add", operate("+", 234, 234));
