@@ -1,77 +1,78 @@
-$dark-purple:#3A3042;
-$earth-yellow:#DB9D47;
-$coral:#FF784F;
-$peach-yellow:#FFE19C;
-$nyanza:#EDFFD9;
+$nyanza: #edffd9;
+$background: #1e1f24;
+$orange: #f86555;
+$nyanza: #edffd9;
 
 * {
-    font-family: Roboto , sans-serif;
-    font-size: large;
-    font-weight: bold;
+  font-family: Roboto, sans-serif;
+  font-size: x-large;
+  font-weight: bold;
 }
 
-body{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    width:100%;
-    height:100vh;
-    background-color:$dark-purple;
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: $background;
 }
 
 .calculator {
-    display:flex;
-    flex-direction:column;
-    width: 30%;
-    height:70%;
-    background-color:$peach-yellow;
-    min-width:300px;
-    min-height:400px;
-    color:white;
-    border-radius:1em;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 70%;
+  background-color: $orange;
+  min-width: 300px;
+  min-height: 400px;
+  color: white;
+  border-radius: 1em;
 }
 
 .calc-screen {
-    display:flex;
-    flex-direction:column;
-    background-color:$earth-yellow;
-    align-items:end;
-    justify-content:space-around;
-    padding:20px;
-    border-radius:1em 1em 0 0;
-    height:60px;
+  display: flex;
+  flex-direction: column;
+  background-color: $orange;
+  align-items: end;
+  justify-content: space-around;
+  padding: 20px;
+  border-radius: 1em 1em 0 0;
+  height: 90px;
+}
+
+.calc-prevValues {
+  opacity: 0.8;
 }
 
 .calc-options {
-    display:grid;
-    height:20%;
-    grid-template-columns:repeat( 2 , 1fr);
-    padding:20px 20px 0px 20px;
+  display: grid;
+  height: 20%;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px 20px 0px 20px;
 }
 
 .calc-buttons {
-    display:flex;
-    height:100%;
-    padding:0px 20px 20px 20px;
+  display: flex;
+  height: 100%;
+  padding: 0px 20px 20px 20px;
 }
 
 .btn-numpad {
-    display: grid;
-    width:100%;
-    grid-template-columns:repeat(4 ,1fr);
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .btn {
-    background-color:$coral;
-    border: 1px solid $peach-yellow;
-    border-radius:1em;
-    margin:2px;
-    color:white;
-    box-shadow: 0 8px 8px -4px black;
+  background-color: $background;
+  border: 1px solid $orange;
+  border-radius: 1em;
+  margin: 2px;
+  color: white;
 
-    &:hover{
-        background-color:$nyanza;
-        color:black;
-    }
+  &:hover {
+    background-color: $nyanza;
+    color: black;
+  }
 }
-
