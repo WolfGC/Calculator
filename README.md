@@ -6,4 +6,4 @@
 - number presses on the keyboard will work as inputs
 - result numbers are rounded and decimals should work for inputs
 
-Live Link: 
+Live Link: https://wolfgc.github.io/Calculator/ 
